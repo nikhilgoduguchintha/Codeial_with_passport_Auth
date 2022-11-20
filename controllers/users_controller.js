@@ -50,8 +50,11 @@ module.exports.createSession = function(req,res){
 }
 
 module.exports.destroySession = function(req,res){
-    req.logout(function(){
-        
+    req.logout(function(err){
+        if(err){ return console.log("error in logout")}
+        // res.clearCookie('Codeial');
+        res.clearCookie('codeial')
+        return res.redirect('/');
     });
-    return res.redirect('/');
+    
 }

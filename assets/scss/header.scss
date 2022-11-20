@@ -1,0 +1,29 @@
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background: #4297A0;
+    #head{
+        margin: 5px;
+        padding: 5px;
+        padding-left: 20px;
+        color: aliceblue;
+        font-size: 2em;
+        font-family: monospace;
+    }
+    #list-items{
+        list-style: none;    
+        display: flex;
+        a{
+            margin: 5px;
+            padding: 5px;
+            padding-right: 50px;
+            color: aliceblue;
+            font-size: 1.3em;
+            font-family: monospace;
+            text-decoration: none;
+            
+        }
+    }
+}
+

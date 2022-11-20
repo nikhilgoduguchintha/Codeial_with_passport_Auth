@@ -1,0 +1,14 @@
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #4C5D70;
+  color: aliceblue;
+  display: flex; }
+  footer p, footer a {
+    margin: 10px;
+    padding: 5px;
+    font-family: monospace;
+    text-decoration: none; }
+  footer a {
+    color: aliceblue; }
