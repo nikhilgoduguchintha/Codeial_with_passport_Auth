@@ -61,6 +61,7 @@ module.exports.create = function(req,res){
 }
 
 module.exports.createSession = function(req,res){
+    req.flash('success', 'Logged in Successfully')
     return res.redirect('/');
 }
 
@@ -69,6 +70,7 @@ module.exports.destroySession = function(req,res){
         if(err){ return console.log("error in logout")}
         // res.clearCookie('Codeial');
         res.clearCookie('codeial')
+        req.flash('success','Logged out successfully')
         return res.redirect('/');
     });
     
